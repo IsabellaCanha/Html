@@ -11,6 +11,12 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         td,th{
             border: 1px solid black;
@@ -21,18 +27,32 @@
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        tbody>tr:nth-child(even){
+            background-color: lightcyan;
+        }
         td.num{
             text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidadades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
             
         </thead>
@@ -63,13 +83,46 @@
                 <td>Pernambuco</td>
                 <td class="num">9 539 029</td>
             </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">84 342 783</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit quisquam ad. Odio temporibus, nemo dolores, recusandae quod excepturi rerum beatae eum voluptate doloribus, hic delectus aliquid sint quam voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa tenetur, nostrum eveniet quisquam dolorum quibusdam dolore aliquam soluta, est deserunt minus. Ea nemo dicta exercitationem error harum molestias eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe exercitationem quae inventore magnam incidunt laudantium aliquam, velit amet consequatur tempora aperiam debitis ipsa maiores. Exercitationem tenetur voluptatem tempora sunt!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit quisquam ad. Odio temporibus, nemo dolores, recusandae quod excepturi rerum beatae eum voluptate doloribus, hic delectus aliquid sint quam voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa tenetur, nostrum eveniet quisquam dolorum quibusdam dolore aliquam soluta, est deserunt minus. Ea nemo dicta exercitationem error harum molestias eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe exercitationem quae inventore magnam incidunt laudantium aliquam, velit amet consequatur tempora aperiam debitis ipsa maiores. Exercitationem tenetur</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit quisquam ad. Odio temporibus, nemo dolores, recusandae quod excepturi rerum beatae eum voluptate doloribus, hic delectus aliquid sint quam voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa tenetur, nostrum eveniet quisquam dolorum quibusdam dolore aliquam soluta, est deserunt minus. Ea nemo dicta exercitationem error harum molestias eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe exercitationem quae inventore magnam incidunt laudantium aliquam, velit amet consequatur tempora aperiam debitis ipsa maiores. Exercitationem tenetur</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit quisquam ad. Odio temporibus, nemo dolores, recusandae quod excepturi rerum beatae eum voluptate doloribus, hic delectus aliquid sint quam voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa tenetur, nostrum eveniet quisquam dolorum quibusdam dolore aliquam soluta, est deserunt minus. Ea nemo dicta exercitationem error harum molestias eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe exercitationem quae inventore magnam incidunt laudantium aliquam, velit amet consequatur tempora aperiam debitis ipsa maiores. Exercitationem tenetur</p>
+
 </body>
 </html>
